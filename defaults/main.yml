@@ -2,7 +2,7 @@
 
 qbittorrent_name: qbittorrent
 qbittorrent_image: linuxserver/qbittorrent
-qbittorrent_webui_port: 8080
+qbittorrent_webui_port: '8080' # place in quotes
 qbittorrent_ports:
   - 6881:6881
   - 6881:6881/udp
@@ -14,7 +14,7 @@ qbittorrent_environment_variables:
   PGID: "1000"
   TZ: Sydney/Australia
   UMASK_SET: "022"
-  WEBUI_PORT: "'{{ qbittorrent_webui_port }}'"
+  WEBUI_PORT: "{{ qbittorrent_webui_port }}"
 
 qbittorrent_docker_additional_options:
   restart_policy: unless-stopped
