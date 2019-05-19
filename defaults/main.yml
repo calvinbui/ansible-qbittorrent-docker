@@ -19,6 +19,6 @@ qbittorrent_environment_variables:
 qbittorrent_docker_additional_options:
   restart_policy: unless-stopped
 
-qbittorent_config:
+qbittorrent_config:
   BitTorrent.Session\CreateTorrentSubfolder: "true"
   Preferences.Bittorrent\PeX: "true"

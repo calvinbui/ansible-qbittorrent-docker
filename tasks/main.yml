@@ -36,5 +36,5 @@
     option: "{{ item.key.split('.')[1] }}"
     value: "{{ item.value }}"
     no_extra_spaces: true
-  with_items: "{{ qbittorent_config | dict2items }}"
+  with_items: "{{ qbittorrent_config | dict2items }}"
   notify: Restart qBittorrent
