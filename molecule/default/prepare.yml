@@ -1,0 +1,10 @@
+---
+- name: Prepare
+  hosts: all
+  become: true
+  vars:
+    pip_install_packages:
+      - name: docker
+      - name: pyyaml
+  roles:
+    - calvinbui.ansible_pip
