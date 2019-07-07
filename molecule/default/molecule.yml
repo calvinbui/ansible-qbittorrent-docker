@@ -10,9 +10,9 @@ lint:
       line-length: disable
 platforms:
   - name: ansible-qbittorrent-docker
-    image: docker:dind
-    privileged: true
-    command: "dockerd"
+    image: geerlingguy/docker-ubuntu1804-ansible
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
 provisioner:
   name: ansible
   options:

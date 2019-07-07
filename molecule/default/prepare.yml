@@ -1,10 +1,12 @@
 ---
 - name: Prepare
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
   hosts: all
   become: true
   vars:
     pip_install_packages:
       - name: docker
-      - name: pyyaml
+        executable: pip3
   roles:
     - calvinbui.ansible_pip

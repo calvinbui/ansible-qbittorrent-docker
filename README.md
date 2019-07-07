@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.com/calvinbui/ansible-qbittorrent-docker.svg?branch=master)](https://travis-ci.com/calvinbui/ansible-qbittorrent-docker)
+![GitHub release](https://img.shields.io/github/release/calvinbui/ansible-qbittorrent-docker.svg)
+![Ansible Quality Score](https://img.shields.io/ansible/quality/40534.svg)
+![Ansible Role](https://img.shields.io/ansible/role/d/40534.svg)
+
 # Ansible qBittorrent
 
 qBittorrent in Docker
